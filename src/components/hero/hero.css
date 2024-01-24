@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    height: 70vh;
+    min-height: 70vh;
     margin: auto;
 }
 
@@ -33,17 +33,18 @@
     width: 10rem;
     font-weight: 500;
     font-size: 1rem;
-    border: 1px solid #000;
     padding: .5rem 1rem;
     border-radius: 1rem;
+    transition: 400ms ease;
 }
 .btns >:first-child{
     color: #4d4c4c;
+    background: #fff
 }
 .btns >:first-child:hover{
-    background: #000;
+    background: #4d4c4c;
     color: #fff;
-    transition: 400ms ease;
+    border: none;
 }
 .btns >:last-child{
     border: none;
@@ -53,7 +54,6 @@
 .btns >:last-child:hover {
     color: #000;
     background: #fff;
-    border: 1px solid #4d4c4c;
     transition: 400ms ease;
 }
 
@@ -64,7 +64,7 @@
 .hero > img {
     width: 350px;
     border-radius: 50%;
-    background: #D9DBE1;
+    background: #fff;
 }
 
 .social__link {
@@ -76,39 +76,4 @@
 
 .social__link a img{
     width: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        position: absolute;
-        top: 6rem;
-        min-height: 80vh;
-        gap: 1rem;
-    }
-
-    .hero > img {
-        width: 230px;
-    }
-
-   .profile__detail span {
-       font-size: 16px;
-   }
-   .profile__detail h1 {
-    position: relative;
-    font-size: 2rem;
-   }
-   .profile__detail h2 {
-       font-size: 1rem;
-   }
-
-   .btns {
-    gap: 1rem;
-   }
-   
-   .btns a{
-    font-size: 8px;
-    font-weight: bold;
-   }
-
 }

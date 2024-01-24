@@ -40,12 +40,15 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column;
         position: absolute;
-        top: 1rem;
+        top: 4rem;
         right: 2rem;
         transition: 300ms ease;
-        display: none;
+        z-index: 1;
+        background: #fff;
+        padding: 2rem;
+       display: none;
     }
     .fa-bars {
-        display: block;
+        display: flex;
     }
 }
