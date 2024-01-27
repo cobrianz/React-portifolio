@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+nav h1 {
+    color: #000;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+nav ul li a:hover{
+    text-decoration: 1px underline;
+    transition: all 300ms ease;
+}
+
+.fa-times, .fa-bars {
+    position: absolute;
+    right: 10vw;
+    font-size: 2rem;
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 2rem;
+        top: 5rem;
+        align-items: end;
+        background: #D9DBE1;
+        padding: 2rem;
+        display: none;
+    }
+
+    .fa-times {
+        display: flex;
+        right: 2rem;
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex;
+    }
+}
