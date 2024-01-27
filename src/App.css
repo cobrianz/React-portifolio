@@ -4,13 +4,17 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 .App {
   margin: 0 auto;
   width: 80vw;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
+
+/* .container {
+  min-height: 90vh;
+} */
 
 li{
   list-style: none;

@@ -6,7 +6,8 @@ import linkedin from '../../assets/linkedin.png'
 import HeroData from '../../data/heroData'
 const hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero container'>
+      <div>
       <img src={profile} alt="" />
       <div className="hero__details">
       <div className="hero__detail">
@@ -17,6 +18,7 @@ const hero = () => {
       <div className="social__links">
       <a href="#"><img src={linkedin} alt="" /></a>
       <a href="#"><img src={github} alt="" /></a>
+      </div>
       </div>
       </div>
     </div>
