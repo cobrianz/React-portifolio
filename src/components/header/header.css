@@ -30,7 +30,18 @@ nav ul li a:hover{
     right: 10vw;
     font-size: 2rem;
     display: none;
+    cursor: pointer;
 }
+
+ul.menu {
+    display: none;
+}
+
+ul.menuClose {
+    display: flex;
+}
+
+
 @media screen and (max-width: 800px) {
     nav ul {
         flex-direction: column;
@@ -48,8 +59,9 @@ nav ul li a:hover{
         right: 2rem;
         display: none;
     }
-
+    
     .fa-bars {
+        right: 2rem;
         display: flex;
     }
 }

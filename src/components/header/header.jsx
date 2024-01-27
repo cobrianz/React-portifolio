@@ -1,23 +1,30 @@
-import React from 'react'
-import './header.css'
-import HeaderData from '../../data/HeaderData'
-const header = () => {
-    return (
-        <div className='container'>
-            <nav>
-                <h1>{HeaderData.name}</h1>
-                <ul>
-                    {HeaderData.links.map((link, index) => (
-                        <li key={index}>
-                            <a href={link.url}>{link.label}</a>
-                        </li>
-                    ))}
-                </ul>
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </nav>
-        </div>
-    )
-}
+import React, { useState } from 'react';
+import './header.css';
+import HeaderData from '../../data/HeaderData';
 
-export default header
+const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className='container'>
+      <nav>
+        <h1>{HeaderData.name}</h1>
+        <ul className={!isMenuOpen ? 'menu' : 'menuClose'}>
+          {HeaderData.links.map((link, index) => (
+            <li key={index}>
+              <a href={link.url}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+        <i className="fa fa-bars" style={isMenuOpen ? {display: 'none'} : {display: 'flex'} } aria-hidden="true" onClick={toggleMenu}></i>
+        <i className="fa fa-times" style={isMenuOpen ? {display: 'flex'} : {display: 'none'} } aria-hidden="true" onClick={toggleMenu}></i>
+      </nav>
+    </div>
+  );
+};
+
+export default Header;
