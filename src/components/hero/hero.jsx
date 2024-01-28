@@ -21,6 +21,7 @@ const hero = () => {
       </div>
       </div>
       </div>
+      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     </div>
   )
 }

@@ -27,7 +27,7 @@ nav ul li a:hover{
 
 .fa-times, .fa-bars {
     position: absolute;
-    right: 10vw;
+    right: 2rem;
     font-size: 2rem;
     display: none;
     cursor: pointer;
@@ -45,10 +45,7 @@ nav ul li a:hover{
         background: #d9dbe1;
         padding: 2rem;
         display: none;
-    }
-
-    .fa-bars{
-        display: flex;
+        z-index: 99;
     }
 
     .menu {
