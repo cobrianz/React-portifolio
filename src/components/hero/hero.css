@@ -79,6 +79,7 @@
     border-radius: 2rem 0;
     transition: all 300ms ease-in-out;
     color: #6a5acd;
+    z-index: 99;
 }
 
 .fa-envelope:hover {
@@ -93,8 +94,9 @@
         flex-direction: column;
     }
 
-    .hero img {
-        margin-bottom: 3rem;
+    .fa-envelope{
+        font-size: 1.5rem;
+        right: 2rem;
     }
 }
 
@@ -117,4 +119,6 @@
     .hero__detail span:nth-child(3) {
         font-size: 1rem;
     }
+
+   
 }
