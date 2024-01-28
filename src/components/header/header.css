@@ -33,13 +33,6 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-ul.menu {
-    display: none;
-}
-
-ul.menuClose {
-    display: flex;
-}
 
 
 @media screen and (max-width: 800px) {
@@ -54,14 +47,16 @@ ul.menuClose {
         display: none;
     }
 
-    .fa-times {
+    .fa-bars{
         display: flex;
-        right: 2rem;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menuClose {
         display: none;
     }
-    
-    .fa-bars {
-        right: 2rem;
-        display: flex;
-    }
+ 
 }

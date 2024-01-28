@@ -3,10 +3,10 @@ import './header.css';
 import HeaderData from '../../data/HeaderData';
 
 const Header = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
+  const [isMenuOpen, setMenuOpen] = useState(true);
+  const mobile = window.innerWidth === '800px'
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
+  setMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -20,8 +20,8 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <i className="fa fa-bars" style={isMenuOpen ? {display: 'none'} : {display: 'flex'} } aria-hidden="true" onClick={toggleMenu}></i>
-        <i className="fa fa-times" style={isMenuOpen ? {display: 'flex'} : {display: 'none'} } aria-hidden="true" onClick={toggleMenu}></i>
+        <i className='fa fa-bars' style={isMenuOpen ? {display: 'flex'} : {display: 'flex'} } aria-hidden="true" onClick={toggleMenu}></i>
+        <i className='fa fa-times' style={isMenuOpen ? {display: 'flex'} : {display: 'none'} } aria-hidden="true" onClick={toggleMenu}></i>
       </nav>
     </div>
   );
